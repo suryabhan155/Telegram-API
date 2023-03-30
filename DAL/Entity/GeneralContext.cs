@@ -1,0 +1,26 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DAL.Entity
+{
+    public class GeneralContext : DbContext
+    {
+        public GeneralContext(DbContextOptions<GeneralContext> options):base(options)
+        {
+            
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Register>().HasData(
+            //    new Register { id = 1, fname = "super", lname = "admin", email = "admin@gmail.com", contactno = "7777777777", role = "superAdmin", description = "", status = "Active", createddate = DateTime.UtcNow, field1 = "", field2 = "" }
+            //);
+        }
+        public DbSet<Channel> Channels { get; set; }
+        public DbSet<BasicGroup> BasicGroups { get; set; }
+        public DbSet<Link> Links { get; set; }
+    }
+}

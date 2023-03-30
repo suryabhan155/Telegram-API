@@ -1,0 +1,14 @@
+G:\Telegram\Telegram\DAL\bin\Debug\net6.0\DAL.deps.json
+G:\Telegram\Telegram\DAL\bin\Debug\net6.0\DAL.runtimeconfig.json
+G:\Telegram\Telegram\DAL\bin\Debug\net6.0\DAL.dll
+G:\Telegram\Telegram\DAL\bin\Debug\net6.0\DAL.pdb
+G:\Telegram\Telegram\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+G:\Telegram\Telegram\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+G:\Telegram\Telegram\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+G:\Telegram\Telegram\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+G:\Telegram\Telegram\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+G:\Telegram\Telegram\DAL\obj\Debug\net6.0\DAL.dll
+G:\Telegram\Telegram\DAL\obj\Debug\net6.0\refint\DAL.dll
+G:\Telegram\Telegram\DAL\obj\Debug\net6.0\DAL.pdb
+G:\Telegram\Telegram\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
+G:\Telegram\Telegram\DAL\obj\Debug\net6.0\ref\DAL.dll
