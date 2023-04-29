@@ -175,10 +175,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -284,13 +280,17 @@
               "target": "Package",
               "version": "[7.0.3, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
             },
             "WTelegramClient": {
               "target": "Package",
-              "version": "[3.1.5, )"
+              "version": "[3.4.2, )"
             }
           },
           "imports": [

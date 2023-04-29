@@ -19,7 +19,11 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "api_id": "22736960",
         "api_hash": "ec73a6785c2749f3cf72b2cfd767ac1c",
-        "phone_number": "+918839350344"
+        "phone_number": "+918839350344",
+        //"api_id": "22562442", //ragini
+        //"api_hash": "d95f4935b17f6f7b41a2b04df245dc0c",
+        //"phone_number": "+919335033926",
+        //"session_pathname": "session46"
       }
     },
     "IIS Express": {

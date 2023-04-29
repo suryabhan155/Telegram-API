@@ -14,10 +14,16 @@ namespace DAL.Entity
         public long Id { get; set; }
         [ForeignKey("Channel")]
         public long channelId { get; set; }
+        public long linkId { get; set; }
         [Required]
-        public string link { get; set; }
-        public bool IsOnceClicked { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime ExpiredDate { get; set; }
+        public string? link { get; set; }
+        public string? title { get; set; }
+        public int? usage_limit { get; set; }
+        public bool request_needed { get; set; }
+        public bool legacy_revoke_permanent { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? expire_Date { get; set; }
+        public bool revoked { get; set; }
+        public bool deleted { get; set; }
     }
 }

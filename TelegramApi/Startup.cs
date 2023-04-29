@@ -23,7 +23,7 @@ namespace TelegramApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            services.AddDbContext<GeneralContext>(o => o.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<GeneralContext>(o => o.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("DAL")));
             services.AddSingleton<TelegramService>();
             services.AddSingleton<ResponseModel>();
             services.AddTransient<IChannelService, ChannelService>();
@@ -68,6 +68,7 @@ namespace TelegramApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.HandleExceptionByJarvisAlgo(Configuration);
             // global cors policy
             app.UseCors(x => x
                 .AllowAnyOrigin()
@@ -96,6 +97,7 @@ namespace TelegramApi
             {
                 endpoints.MapControllers();
             });
+            
         }
     }
 }

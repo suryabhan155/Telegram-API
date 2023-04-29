@@ -13,6 +13,11 @@ namespace DAL.Entity
         {
             
         }
+
+        public GeneralContext()
+        {
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //modelBuilder.Entity<Register>().HasData(
@@ -20,7 +25,9 @@ namespace DAL.Entity
             //);
         }
         public DbSet<Channel> Channels { get; set; }
-        public DbSet<BasicGroup> BasicGroups { get; set; }
         public DbSet<Link> Links { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<JoinRequest> JoinRequests { get; set; }
+        public DbSet<ExceptionLog> ExceptionLogs { get; set; }
     }
 }

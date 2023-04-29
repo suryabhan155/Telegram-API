@@ -8,12 +8,12 @@ namespace BOL
 {
     public class ResponseModel
     {
-        public bool success { get; set; }
+        public bool Success { get; set; }
 
-        public string message { get; set; }
+        public string Message { get; set; }
 
-        public Object data { get; set; }
+        public Object Data { get; set; }
 
-        public int Status_Code { get; set; }
+        public int StatusCode { get; set; }
     }
 }

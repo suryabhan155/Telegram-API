@@ -1,4 +1,5 @@
-﻿using TL;
+﻿using Microsoft.AspNetCore.Session;
+using TL;
 using WTelegram;
 
 namespace TelegramApi
@@ -16,6 +17,7 @@ namespace TelegramApi
             _config = config;
             WTelegram.Helpers.Log = (lvl, msg) => logger.Log((LogLevel)lvl, msg);
             Client = new WTelegram.Client(what => _config[what]);
+            //new WTelegram.Client(what => _config[what], new SessionStore("gffgfhg"));
         }
 
         public override void Dispose()
